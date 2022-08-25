@@ -24,11 +24,11 @@ done
 g++ -Wall -Wextra -Werror -std=c++11 -o $aula/$programa.exe $aula/$programa.cpp
 
 # Run program with input file if exists and output to file if flag is set
-if [ -f $aula/$programa.in ]; then
+if [ -f ../exercises/$aula/$programa.in ]; then
     if [ "$output" = "file" ]; then
-        ./$aula/$programa.exe < $aula/$programa.in > $aula/$programa.out
+        ./$aula/$programa.exe < ../exercises/$aula/$programa.in > $aula/$programa.out
     else
-        ./$aula/$programa.exe < $aula/$programa.in
+        ./$aula/$programa.exe < ../exercises/$aula/$programa.in
     fi
 else
     if [ "$output" = "file" ]; then
