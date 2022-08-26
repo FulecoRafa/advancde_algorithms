@@ -8,5 +8,5 @@ edition = "2021"
 [dependencies]
 
 [[bin]]
-name = "conformity"
+name = "01_conformity"
 path = "src/bin/01/conformity.rs"
